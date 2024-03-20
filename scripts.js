@@ -1,7 +1,7 @@
 function storeData() {
     const barcode = document.getElementById('barcode').value;
     const itemName = document.getElementById('itemName').value;
-    const sku = document.getElementById('sku').value;
+    const sku = document.getElementById('model').value;
     const qty = document.getElementById('qty').value;
     const storageLocation = document.getElementById('storageLocation').value;
     const isInbound = false;
