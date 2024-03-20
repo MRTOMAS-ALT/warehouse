@@ -51,7 +51,7 @@ function searchInventory() {
 function toggleIsInbound(index) {
     const inventory = JSON.parse(localStorage.getItem('inventory')) || [];
     if (!inventory[index].isInbound) {
-        alert('The item is being processed!');
+        alert('ΕΞΑΡΤΗΜΑ ΜΕΤΑΦΟΡΑ ΠΡΟΣ ΚΟΥΡΙΕΡ!');
     }
     // Toggle isInbound status
     inventory[index].isInbound = !inventory[index].isInbound;
@@ -89,7 +89,7 @@ function displayInventory(inventoryData) {
             <td>${item.model}</td>
             <td>${item.qty}</td>
             <td>${item.storageLocation}</td>
-            <td>${item.isInbound ? 'ΠΡΟΣ ΚΟΥΡΙΕΡ' : 'ΔΙΑΘΕΣΙΜΟ'}</td>
+            <td>${item.isInbound ? 'ΠΡΟΣ ΚΟΥΡΙΕΡ' : 'ΔΙΑΘΕΣΙΜΟ!'}</td>
             <td><button class="btn btn-danger" onclick="toggleIsInbound(${inventory.indexOf(item)})">${item.isInbound ? 'ΠΡΟΣ ΚΟΥΡΙΕΡ' : 'ΔΙΑΘΕΣΙΜΟ'}</button></td>
         `;
         if (item.isInbound) {
