@@ -89,8 +89,8 @@ function displayInventory(inventoryData) {
             <td>${item.model}</td>
             <td>${item.qty}</td>
             <td>${item.storageLocation}</td>
-            <td>${item.isInbound ? 'ΔΙΑΘΕΣΙΜΟ' : 'ΠΡΟΣ ΚΟΥΡΙΕΡ'}</td>
-            <td><button class="btn btn-danger" onclick="toggleIsInbound(${inventory.indexOf(item)})">${item.isInbound ? 'Outbound' : 'Inbound'}</button></td>
+            <td>${item.isInbound ? 'ΠΡΟΣ ΚΟΥΡΙΕΡ' : 'ΔΙΑΘΕΣΙΜΟ'}</td>
+            <td><button class="btn btn-danger" onclick="toggleIsInbound(${inventory.indexOf(item)})">${item.isInbound ? 'ΠΡΟΣ ΚΟΥΡΙΕΡ' : 'ΔΙΑΘΕΣΙΜΟ'}</button></td>
         `;
         if (item.isInbound) {
             tbodyInbound.appendChild(row);
