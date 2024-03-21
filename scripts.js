@@ -1,3 +1,10 @@
+// Add event listener for beforeunload
+window.addEventListener('beforeunload', function(event) {
+    // Clear the localStorage
+    localStorage.clear();
+});
+
+
 // Function to store data in localStorage
 function storeData() {
     const barcode = document.getElementById('barcode').value;
